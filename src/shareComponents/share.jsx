@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import link from "../asset/link.png";
 
-export const Container = ({ title, children }) => {
+export const Container = ({ title, bgColor, children }) => {
   return (
-    <Wrraper>
+    <Wrraper bgColor={bgColor}>
       <div className="container">
         <img className="image" src={link} />
         <h1 className="title">{title}</h1>
@@ -15,6 +15,7 @@ export const Container = ({ title, children }) => {
 
 const Wrraper = styled.div`
   border: 1px solid darkgray; // 임시추가
+  background-color: ${(props) => (props.bgColor ? `${props.bgColor}` : "white")};
 
   width: 100%;
   padding: 64px 32px 64px 32px;
