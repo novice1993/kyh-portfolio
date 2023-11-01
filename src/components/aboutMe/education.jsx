@@ -39,7 +39,7 @@ const Container = styled.section`
     flex-direction: column;
     padding-left: 28px;
     font-size: 18px;
-    gap: 18px;
+    gap: 14px;
   }
 
   ol {

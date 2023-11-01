@@ -1,3 +1,10 @@
+// Layout - header
+export const headerTitle = "KYH's Portfolio";
+export const category01 = "About me";
+export const category02 = "Skills";
+export const category03 = "Projects";
+export const category04 = "Strength";
+
 // introduce component
 export const title01 = "웹 프론트엔드 개발자";
 export const title02 = "김영학의 포트폴리오입니다";
