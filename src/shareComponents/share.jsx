@@ -4,10 +4,10 @@ import link from "../asset/link.png";
 export const Container = ({ title, children }) => {
   return (
     <Wrraper>
-      <h1 className="title">
-        <img src={link} />
-        <span>{title}</span>
-      </h1>
+      <div className="container">
+        <img className="image" src={link} />
+        <h1 className="title">{title}</h1>
+      </div>
       {children}
     </Wrraper>
   );
@@ -23,17 +23,20 @@ const Wrraper = styled.div`
   justify-content: center;
   align-items: center;
 
-  .title {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 48px;
+  }
+
+  .image {
+    width: 24px;
+  }
+
+  .title {
     border-bottom: 1px solid darkgray;
-
-    & img {
-      width: 24px;
-      height: auto;
-    }
-
-    & span {
-      padding-left: 10px;
-    }
   }
 `;
