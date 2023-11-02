@@ -1,16 +1,14 @@
 import styled from "styled-components";
 import { Container } from "../../shareComponents/share";
-import Profile from "./profile";
 import Education from "./education";
 import Career from "./carrer";
 import Animation from "./animation";
 
 const AboutMe = () => {
   return (
-    <Container title="ABOUT ME">
+    <Container title="ABOUT ME" id="aboutMe">
       <ExternalContainer>
         <InternalContainer>
-          <Profile />
           <Education />
           <Career />
         </InternalContainer>
@@ -31,5 +29,6 @@ const ExternalContainer = styled.div`
 const InternalContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 48px;
 `;

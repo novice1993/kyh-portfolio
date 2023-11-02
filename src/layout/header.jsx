@@ -1,16 +1,33 @@
+import { useRef } from "react";
 import styled from "styled-components";
 import { headerTitle, category01, category02, category03, category04 } from "../constant/constant";
 
 const Header = () => {
+  const ref = useRef(null);
+
+  const handleMoveScroll = (id) => {
+    const targetElement = document.querySelector(id);
+    if (ref) {
+      const headerHeight = ref.current.clientHeight;
+      const targetTop = targetElement.getBoundingClientRect().top + window.scrollY;
+
+      const scrollTo = targetTop - headerHeight;
+      window.scrollTo({
+        top: scrollTo,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <Container>
+    <Container ref={ref} id="header">
       <div className="container">
         <div className="title">{headerTitle}</div>
         <div className="category">
-          <span>{category01}</span>
-          <span>{category02}</span>
-          <span>{category03}</span>
-          <span>{category04}</span>
+          <span onClick={() => handleMoveScroll("#aboutMe")}>{category01}</span>
+          <span onClick={() => handleMoveScroll("#skills")}>{category02}</span>
+          <span onClick={() => handleMoveScroll("#projects")}>{category03}</span>
+          <span onClick={() => handleMoveScroll("#strength")}>{category04}</span>
         </div>
       </div>
     </Container>
@@ -52,5 +69,11 @@ const Container = styled.header`
     display: flex;
     flex-direction: row;
     gap: 20px;
+
+    & span {
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 `;

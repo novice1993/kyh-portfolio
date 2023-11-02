@@ -5,7 +5,7 @@ import { stackData } from "./stackData";
 
 const Skills = () => {
   return (
-    <Container title="SKILLS">
+    <Container title="SKILLS" id="skills">
       <GridBox>
         {stackData.map((stack) => {
           const logo = stack.logo;

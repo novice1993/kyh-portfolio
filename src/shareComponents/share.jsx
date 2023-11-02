@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import link from "../asset/link.png";
 
-export const Container = ({ title, bgColor, children }) => {
+export const Container = ({ id, title, bgColor, children }) => {
   return (
-    <Wrraper bgColor={bgColor}>
+    <Wrraper bgColor={bgColor} id={id}>
       <div className="container">
         <img className="image" src={link} />
         <h1 className="title">{title}</h1>

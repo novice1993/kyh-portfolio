@@ -3,6 +3,20 @@ import { title01, title02, introduceMent01, introduceMent02 } from "../../consta
 
 const learnMoreBtnText = "Learn More";
 
+const handleMoveScroll = (id) => {
+  const header = document.querySelector("#header");
+  const targetElement = document.querySelector(id);
+
+  const headerHeight = header.clientHeight;
+  const targetTop = targetElement.getBoundingClientRect().top + window.scrollY;
+
+  const scrollTo = targetTop - headerHeight;
+  window.scrollTo({
+    top: scrollTo,
+    behavior: "smooth",
+  });
+};
+
 const Introduce = () => {
   return (
     <Container>
@@ -15,7 +29,7 @@ const Introduce = () => {
         <div>{introduceMent01}</div>
         <div>{introduceMent02}</div>
       </InroduceMent>
-      <LearnMoreBtn>{learnMoreBtnText}</LearnMoreBtn>
+      <LearnMoreBtn onClick={() => handleMoveScroll("#aboutMe")}>{learnMoreBtnText}</LearnMoreBtn>
     </Container>
   );
 };
