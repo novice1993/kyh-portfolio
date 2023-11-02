@@ -5,6 +5,13 @@ import { headerTitle, category01, category02, category03, category04 } from "../
 const Header = () => {
   const ref = useRef(null);
 
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const handleMoveScroll = (id) => {
     const targetElement = document.querySelector(id);
     if (ref) {
@@ -22,7 +29,9 @@ const Header = () => {
   return (
     <Container ref={ref} id="header">
       <div className="container">
-        <div className="title">{headerTitle}</div>
+        <div className="title" onClick={handleScrollToTop}>
+          {headerTitle}
+        </div>
         <div className="category">
           <span onClick={() => handleMoveScroll("#aboutMe")}>{category01}</span>
           <span onClick={() => handleMoveScroll("#skills")}>{category02}</span>
@@ -44,11 +53,11 @@ const Container = styled.header`
   z-index: 1;
   width: 100%;
   height: 72px;
-  border: 1px solid blue;
+  border: 1px solid black;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-weight: 900;
+  font-weight: 700;
 
   .container {
     width: 1076px;
@@ -62,6 +71,9 @@ const Container = styled.header`
 
   .title {
     font-size: 24px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .category {

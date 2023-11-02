@@ -4,6 +4,7 @@ import AboutMe from "./components/aboutMe";
 import Skills from "./components/skills";
 import Projects from "./components/projects";
 import Strength from "./components/strength";
+import GoUpButton from "./components/goUpButton";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Skills />
       <Projects />
       <Strength />
+      <GoUpButton buttonText="🔝" />
     </Layout>
   );
 }

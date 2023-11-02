@@ -18,6 +18,7 @@ const Wrraper = styled.div`
   background-color: ${(props) => (props.bgColor ? `${props.bgColor}` : "white")};
 
   width: 100%;
+
   padding: 64px 32px 64px 32px;
   display: flex;
   flex-direction: column;
