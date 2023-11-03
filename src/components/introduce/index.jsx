@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import background from "../../asset/background.jpg";
+import Arrow from "./arrow";
 import { title01, title02, introduceMent01, introduceMent02 } from "../../constant/constant";
 
 const learnMoreBtnText = "Learn More";
@@ -29,6 +30,7 @@ const Introduce = () => {
         <div>{introduceMent02}</div>
       </InroduceMent>
       <LearnMoreBtn onClick={() => handleMoveScroll("#aboutMe")}>{learnMoreBtnText}</LearnMoreBtn>
+      <Arrow />
     </Container>
   );
 };
@@ -44,7 +46,7 @@ const Container = styled.div`
   justify-content: center;
   background-image: url(${background});
   width: 100%;
-  padding: 0px 32px 64px 32px;
+  padding: 0px 32px 124px 32px;
 
   .title {
     display: flex;
