@@ -21,6 +21,10 @@ const Career = () => {
 export default Career;
 
 const Container = styled.section`
+  border: 1px solid darkgray;
+  border-radius: 0.8rem;
+  padding: 24px;
+
   h2 {
     margin-bottom: 20px;
   }

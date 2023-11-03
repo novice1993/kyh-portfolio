@@ -22,6 +22,7 @@ const Skills = () => {
 export default Skills;
 
 const GridBox = styled.div`
+  margin-top: 48px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;

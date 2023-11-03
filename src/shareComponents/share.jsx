@@ -18,12 +18,17 @@ const Wrraper = styled.div`
   background-color: ${(props) => (props.bgColor ? `${props.bgColor}` : "white")};
 
   width: 100%;
-
-  padding: 64px 32px 64px 32px;
+  min-height: calc(100vh - 145px);
+  padding: 64px 32px 96px 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .guide {
+    margin-top: 4px;
+    font-size: 12px;
+  }
 
   .container {
     display: flex;
@@ -31,7 +36,6 @@ const Wrraper = styled.div`
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-bottom: 48px;
   }
 
   .image {

@@ -21,6 +21,7 @@ const AboutMe = () => {
 export default AboutMe;
 
 const ExternalContainer = styled.div`
+  margin-top: 48px;
   display: flex;
   flex-direction: row;
   gap: 80px;
