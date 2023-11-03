@@ -29,34 +29,29 @@ const Header = () => {
   };
 
   return (
-    <TotalContainer scrollY={scrollY} id="header">
-      <Container ref={ref}>
-        <div className="container">
-          <div className="title" onClick={handleScrollToTop}>
-            {headerTitle}
-          </div>
-          <div className="category">
-            <span onClick={() => handleMoveScroll("#aboutMe")}>{category01}</span>
-            <span onClick={() => handleMoveScroll("#skills")}>{category02}</span>
-            <span onClick={() => handleMoveScroll("#projects")}>{category03}</span>
-            <span onClick={() => handleMoveScroll("#strength")}>{category04}</span>
-          </div>
+    <Container ref={ref} scrollY={scrollY} id="header">
+      <div className="container">
+        <div className="title" onClick={handleScrollToTop}>
+          {headerTitle}
         </div>
-      </Container>
-    </TotalContainer>
+        <div className="category">
+          <span onClick={() => handleMoveScroll("#aboutMe")}>{category01}</span>
+          <span onClick={() => handleMoveScroll("#skills")}>{category02}</span>
+          <span onClick={() => handleMoveScroll("#projects")}>{category03}</span>
+          <span onClick={() => handleMoveScroll("#strength")}>{category04}</span>
+        </div>
+      </div>
+    </Container>
   );
 };
 
 export default Header;
 
-const TotalContainer = styled.header`
-  display: ${(props) => (props.scrollY ? "block" : "none")};
-`;
-
 const Container = styled.div`
-  color: black;
-  background-color: #f5f5f5;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+  color: ${(props) => (props.scrollY ? "black" : "#f5f5f5")};
+  background-color: ${(props) => (props.scrollY ? "#f5f5f5" : "transparent")};
+  box-shadow: ${(props) => (props.scrollY ? "0px 0px 10px 2px rgba(0, 0, 0, 0.25)" : "none")};
+  transition: color 0.3s ease-in, background-color 0.3s ease-in, box-shadow 0.3s ease-in;
 
   position: fixed;
   top: 0;
@@ -76,7 +71,7 @@ const Container = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 32px 20px 32px;
+    padding: 36px 0px 36px 0px;
   }
 
   .title {

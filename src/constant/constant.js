@@ -27,7 +27,7 @@ export const eduContent02 = "- 네트워크 (HTTP/HTTPS, REST API) / 기타 툴 
 export const eduContent03 = "- 프로젝트 2회 진행";
 
 // AboutMe - Carrer
-export const carrerTitle = "🏃‍♂️ 커리어";
+export const carrerTitle = "🧑🏻‍💻 커리어";
 export const carrer = "농협 재직ㅣ2021.04 ~ 2023.01 (1년 9개월)";
 export const carrerContent = "- 담당 업무 : 여/수신 및 총무";
 

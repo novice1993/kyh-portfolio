@@ -6,11 +6,13 @@ import { title01, title02, introduceMent01, introduceMent02 } from "../../consta
 const learnMoreBtnText = "Learn More";
 
 const handleMoveScroll = (id) => {
+  const header = document.querySelector("#header");
+  const headerHeight = header.clientHeight;
   const targetElement = document.querySelector(id);
   const targetTop = targetElement.getBoundingClientRect().top + window.scrollY;
 
   // header 높이만큼 제외
-  const scrollTo = targetTop - 72;
+  const scrollTo = targetTop - headerHeight;
   window.scrollTo({
     top: scrollTo,
     behavior: "smooth",

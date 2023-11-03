@@ -48,7 +48,7 @@ const Container = styled.footer`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 32px 20px 32px;
+    padding: 20px 0px 20px 0px;
   }
 
   .profile {

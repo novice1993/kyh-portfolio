@@ -5,7 +5,7 @@ import arrow from "../../asset/arrow.json";
 const Arrow = () => {
   return (
     <Container>
-      <Lottie loop animationData={arrow} style={{ width: "100px" }} play />
+      <Lottie loop animationData={arrow} style={{ width: "95px" }} play speed={2.6} />
     </Container>
   );
 };
