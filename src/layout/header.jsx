@@ -1,9 +1,11 @@
 import { useRef } from "react";
+import { useSelector } from "react-redux";
 import styled from "styled-components";
 import { headerTitle, category01, category02, category03, category04 } from "../constant/constant";
 
 const Header = () => {
   const ref = useRef(null);
+  const scrollY = useSelector((state) => state.scrollY);
 
   const handleScrollToTop = () => {
     window.scrollTo({
@@ -27,26 +29,32 @@ const Header = () => {
   };
 
   return (
-    <Container ref={ref} id="header">
-      <div className="container">
-        <div className="title" onClick={handleScrollToTop}>
-          {headerTitle}
+    <TotalContainer scrollY={scrollY} id="header">
+      <Container ref={ref}>
+        <div className="container">
+          <div className="title" onClick={handleScrollToTop}>
+            {headerTitle}
+          </div>
+          <div className="category">
+            <span onClick={() => handleMoveScroll("#aboutMe")}>{category01}</span>
+            <span onClick={() => handleMoveScroll("#skills")}>{category02}</span>
+            <span onClick={() => handleMoveScroll("#projects")}>{category03}</span>
+            <span onClick={() => handleMoveScroll("#strength")}>{category04}</span>
+          </div>
         </div>
-        <div className="category">
-          <span onClick={() => handleMoveScroll("#aboutMe")}>{category01}</span>
-          <span onClick={() => handleMoveScroll("#skills")}>{category02}</span>
-          <span onClick={() => handleMoveScroll("#projects")}>{category03}</span>
-          <span onClick={() => handleMoveScroll("#strength")}>{category04}</span>
-        </div>
-      </div>
-    </Container>
+      </Container>
+    </TotalContainer>
   );
 };
 
 export default Header;
 
-const Container = styled.header`
-  /* background-color: transparent; */
+const TotalContainer = styled.header`
+  display: ${(props) => (props.scrollY ? "block" : "none")};
+`;
+
+const Container = styled.div`
+  color: black;
   background-color: #f5f5f5;
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
 
@@ -61,6 +69,7 @@ const Container = styled.header`
   font-weight: 700;
 
   .container {
+    display: none;
     width: 1076px;
     height: 100%;
     display: flex;
