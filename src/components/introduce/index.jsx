@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import background from "../../asset/background.jpg";
 import { title01, title02, introduceMent01, introduceMent02 } from "../../constant/constant";
 
 const learnMoreBtnText = "Learn More";
@@ -37,14 +38,15 @@ const Introduce = () => {
 export default Introduce;
 
 const Container = styled.div`
+  color: #f5f5f5;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: skyblue;
+  background-image: url(${background});
   width: 100%;
-  padding: 136px 32px 64px 32px;
+  padding: 0px 32px 64px 32px;
 
   .title {
     display: flex;
@@ -57,7 +59,7 @@ const Container = styled.div`
 
 const Divider = styled.div`
   width: 52px;
-  border: 3px solid black;
+  border: 3px solid #f5f5f5;
   margin: 24px 0px 24px 0px;
 `;
 
@@ -73,6 +75,9 @@ const InroduceMent = styled.div`
 
 const LearnMoreBtn = styled.button`
   font-size: 20px;
-  padding: 16px 32px 16px 32px;
+  font-weight: 500;
+  padding: 16px 24px 16px 24px;
   border-radius: 2rem;
+  border: none;
+  box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.25);
 `;

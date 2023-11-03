@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import link from "../asset/link.png";
 
-export const Container = ({ id, title, bgColor, children }) => {
+export const Container = ({ id, title, titleColor, bgColor, children }) => {
   return (
-    <Wrraper bgColor={bgColor} id={id}>
+    <Wrraper bgColor={bgColor} id={id} titleColor={titleColor}>
       <div className="container">
         <img className="image" src={link} />
         <h1 className="title">{title}</h1>
@@ -14,7 +14,7 @@ export const Container = ({ id, title, bgColor, children }) => {
 };
 
 const Wrraper = styled.div`
-  border: 1px solid darkgray; // 임시추가
+  /* border: 1px solid darkgray; // 임시추가 */
   background-color: ${(props) => (props.bgColor ? `${props.bgColor}` : "white")};
 
   width: 100%;
@@ -43,6 +43,7 @@ const Wrraper = styled.div`
   }
 
   .title {
+    color: ${(props) => (props.titleColor ? `${props.titleColor}` : "black")};
     border-bottom: 1px solid darkgray;
   }
 `;

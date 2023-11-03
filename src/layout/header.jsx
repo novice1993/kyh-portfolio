@@ -46,14 +46,15 @@ const Header = () => {
 export default Header;
 
 const Container = styled.header`
-  background-color: white;
+  /* background-color: transparent; */
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
 
   position: fixed;
   top: 0;
   z-index: 1;
   width: 100%;
   height: 72px;
-  border: 1px solid black;
   display: flex;
   flex-direction: row;
   justify-content: center;

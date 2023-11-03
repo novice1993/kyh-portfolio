@@ -22,8 +22,9 @@ const Container = styled.div`
   width: 400px;
   height: 98px;
   padding: 10px 20px 10px 20px;
-  border: 1px solid black;
   border-radius: 0.65rem;
+  background-color: white;
+  box-shadow: 7px 7px 15px 5px rgba(10, 0, 0, 1);
 
   & img {
     width: auto;

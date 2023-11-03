@@ -19,7 +19,7 @@ const Strength = () => {
   };
 
   return (
-    <Container title="STRENGTH" id="strength">
+    <Container title="STRENGTH" id="strength" bgColor="#f5f5f5">
       <Guide>{strengthGuideMent}</Guide>
       <InnerContainer>
         <div className="content">
@@ -67,7 +67,8 @@ const InnerContainer = styled.div`
 
   & img {
     width: 20vw;
-    border: 1px solid black;
+    border-radius: 0.25rem;
+    box-shadow: 7px 7px 15px 5px rgba(0, 0, 0, 0.5);
 
     &:hover {
       cursor: pointer;

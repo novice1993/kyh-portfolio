@@ -30,9 +30,10 @@ const Education = () => {
 export default Education;
 
 const Container = styled.section`
-  border: 1px solid darkgray;
   border-radius: 0.8rem;
   padding: 32px;
+  background-color: white;
+  box-shadow: 7px 7px 15px 5px rgba(0, 0, 0, 0.2);
 
   h2 {
     margin-bottom: 20px;

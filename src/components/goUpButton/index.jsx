@@ -26,7 +26,7 @@ const Button = styled.button`
   font-size: 35px;
   width: 48px;
   height: 48px;
-  background-color: white;
+  background-color: transparent;
   border: 3px solid black;
   border-radius: 0.3rem;
   opacity: 0.55;

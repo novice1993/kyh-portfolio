@@ -6,7 +6,7 @@ import Animation from "./animation";
 
 const AboutMe = () => {
   return (
-    <Container title="ABOUT ME" id="aboutMe">
+    <Container title="ABOUT ME" id="aboutMe" bgColor="#fac51a">
       <ExternalContainer>
         <InternalContainer>
           <Education />

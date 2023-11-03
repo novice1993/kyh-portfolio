@@ -28,8 +28,8 @@ const Footer = () => {
 export default Footer;
 
 const Container = styled.footer`
-  background-color: white;
-  border: 1px solid black;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
 
   position: fixed;
   bottom: 0;
