@@ -38,7 +38,7 @@ const Header = () => {
           <span onClick={() => handleMoveScroll("#aboutMe")}>{category01}</span>
           <span onClick={() => handleMoveScroll("#skills")}>{category02}</span>
           <span onClick={() => handleMoveScroll("#projects")}>{category03}</span>
-          <span onClick={() => handleMoveScroll("#strength")}>{category04}</span>
+          {/* <span onClick={() => handleMoveScroll("#strength")}>{category04}</span> */}
         </div>
       </div>
     </Container>
@@ -71,7 +71,7 @@ const Container = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 0px 36px 0px;
+    padding: 36px 24px 36px 24px;
   }
 
   .title {

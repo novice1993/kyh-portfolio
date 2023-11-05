@@ -34,7 +34,7 @@ function App() {
       <AboutMe />
       <Skills />
       <Projects />
-      <Strength />
+      {/* <Strength /> */}
       <GoUpButton buttonText="🔝" />
     </Layout>
   );
