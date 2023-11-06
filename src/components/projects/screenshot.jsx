@@ -5,20 +5,19 @@ import coz02 from "../../asset/project/coz02.gif";
 import coz03 from "../../asset/project/coz03.gif";
 import coz04 from "../../asset/project/coz04.gif";
 import coz05 from "../../asset/project/coz05.gif";
-import coz06 from "../../asset/project/coz06.gif";
 
 const contour = "/";
-const shotArray = [coz01, coz02, coz03, coz04, coz05, coz06];
+const shotArray = [coz01, coz02, coz03, coz04, coz05];
 
 const Screenshot = () => {
   const [shotNum, setShotNum] = useState(1);
 
   const handleChangeShotNum = (arrowDirection) => {
     if (arrowDirection === "right") {
-      shotNum < 6 ? setShotNum((preSate) => preSate + 1) : setShotNum(1);
+      shotNum < shotArray.length ? setShotNum((preSate) => preSate + 1) : setShotNum(1);
     }
     if (arrowDirection === "left") {
-      shotNum > 1 ? setShotNum((preSate) => preSate - 1) : setShotNum(6);
+      shotNum > 1 ? setShotNum((preSate) => preSate - 1) : setShotNum(shotArray.length);
     }
   };
 

@@ -1,20 +1,37 @@
+// test
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import styled from "styled-components";
 import link from "../asset/link.png";
 
 export const Container = ({ id, title, titleColor, bgColor, children }) => {
+  useEffect(() => {
+    Aos.init({
+      offset: 100,
+      delay: 20,
+      duration: 450,
+      easing: "ease",
+      mirror: false,
+      anchorPlacement: "top-bottom",
+      debounceDelay: 50,
+      throttleDelay: 99,
+    });
+  }, []);
+
   return (
     <Wrraper bgColor={bgColor} id={id} titleColor={titleColor}>
       <div className="container">
         <img className="image" src={link} />
         <h1 className="title">{title}</h1>
       </div>
-      {children}
+      <div data-aos="fade-down">{children}</div>
     </Wrraper>
   );
 };
 
 const Wrraper = styled.div`
-  /* border: 1px solid darkgray; // 임시추가 */
   background-color: ${(props) => (props.bgColor ? `${props.bgColor}` : "white")};
 
   width: 100%;
