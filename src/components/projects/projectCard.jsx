@@ -3,6 +3,7 @@ import Screenshot from "./screenshot";
 import ProjectOverview from "./projectOverview";
 import ProjectInfo from "./projectInfo";
 import ProjectRoll from "./projectRoll";
+import Review from "./review";
 
 const ProjectCard = () => {
   return (
@@ -12,6 +13,7 @@ const ProjectCard = () => {
         <ProjectOverview />
         <ProjectInfo />
         <ProjectRoll />
+        <Review />
       </div>
     </Container>
   );
@@ -24,6 +26,7 @@ const Container = styled.div`
   border-radius: 0.4rem;
 
   height: 100%;
+  /* max-width: 1300px; */
   padding: 48px;
 
   margin-top: 48px;

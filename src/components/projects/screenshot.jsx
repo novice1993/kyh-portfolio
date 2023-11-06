@@ -7,8 +7,6 @@ import coz04 from "../../asset/project/coz04.gif";
 import coz05 from "../../asset/project/coz05.gif";
 import coz06 from "../../asset/project/coz06.gif";
 
-const leftArrow = "<";
-const rightArrow = ">";
 const contour = "/";
 const shotArray = [coz01, coz02, coz03, coz04, coz05, coz06];
 
@@ -28,11 +26,15 @@ const Screenshot = () => {
     <Container>
       <img src={shotArray[shotNum - 1]} />
       <div className="shotNumBox">
-        <span onClick={() => handleChangeShotNum("left")}>{leftArrow}</span>
-        <span>{shotNum}</span>
-        <span>{contour}</span>
-        <span>6</span>
-        <span onClick={() => handleChangeShotNum("right")}>{rightArrow}</span>
+        <span onClick={() => handleChangeShotNum("left")} className="leftArrow">
+          &#9664;
+        </span>
+        <div>{shotNum}</div>
+        <div>{contour}</div>
+        <div>{shotArray.length}</div>
+        <span onClick={() => handleChangeShotNum("right")} className="rightArrow">
+          &#9654;
+        </span>
       </div>
     </Container>
   );
@@ -43,8 +45,6 @@ export default Screenshot;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   height: 100%;
 
   & img {
@@ -54,11 +54,19 @@ const Container = styled.div`
   }
 
   .shotNumBox {
-    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 16px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 6px;
+    gap: 7px;
+
+    & span {
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 `;
