@@ -1,4 +1,4 @@
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { setScrollY } from "./reducer/scroll_reducer";
 
@@ -7,11 +7,12 @@ import Introduce from "./components/introduce";
 import AboutMe from "./components/aboutMe";
 import Skills from "./components/skills";
 import Projects from "./components/projects";
-import Strength from "./components/strength";
 import GoUpButton from "./components/goUpButton";
+import Readme from "./components/projects/readme";
 
 function App() {
   const dispatch = useDispatch();
+  const isReadme = useSelector((state) => state.isReadme);
 
   // 스크롤 높이에 따라 전역상태 boolean 값 변경
   const handleScroll = () => {
@@ -34,8 +35,8 @@ function App() {
       <AboutMe />
       <Skills />
       <Projects />
-      {/* <Strength /> */}
       <GoUpButton buttonText="🔝" />
+      {isReadme && <Readme />}
     </Layout>
   );
 }

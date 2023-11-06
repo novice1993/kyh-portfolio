@@ -1,12 +1,20 @@
+import { useDispatch } from "react-redux";
+import { setReadme } from "../../reducer/readme_reducer";
 import styled from "styled-components";
 
-const Review = () => {
+const ProjectReview = () => {
+  const dispatch = useDispatch();
+
+  const handleSetReadme = () => {
+    dispatch(setReadme(true));
+  };
+
   return (
     <Container>
       <div className="categoryTitle">
         <div className="titleBox">
           <span>☑️ 문제점 및 해결방안</span>
-          <button>자세히 보기 ▶︎ README</button>
+          <button onClick={handleSetReadme}>자세히 보기 ▶︎ README</button>
         </div>
       </div>
       <ul>
@@ -21,7 +29,7 @@ const Review = () => {
   );
 };
 
-export default Review;
+export default ProjectReview;
 
 const Container = styled.ul`
   position: relative;

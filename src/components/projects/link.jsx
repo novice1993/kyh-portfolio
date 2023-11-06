@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ProjectInfo = () => {
+const ProjectLink = () => {
   return (
     <Container>
       <div className="categoryTitle">☑️ 링크</div>
@@ -25,7 +25,7 @@ const ProjectInfo = () => {
   );
 };
 
-export default ProjectInfo;
+export default ProjectLink;
 
 const Container = styled.ul`
   padding-top: 28px;

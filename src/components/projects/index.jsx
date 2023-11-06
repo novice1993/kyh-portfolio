@@ -1,5 +1,5 @@
 import { Container } from "../../shareComponents/share";
-import ProjectCard from "./projectCard";
+import ProjectCard from "./card";
 
 const Projects = () => {
   return (

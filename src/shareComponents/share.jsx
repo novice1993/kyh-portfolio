@@ -1,4 +1,3 @@
-// test
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -34,7 +33,7 @@ export const Container = ({ id, title, titleColor, bgColor, children }) => {
 const Wrraper = styled.div`
   background-color: ${(props) => (props.bgColor ? `${props.bgColor}` : "white")};
 
-  width: 100%;
+  width: 100vw;
   min-height: calc(100vh - 145px);
   padding: 64px 32px 96px 32px;
   display: flex;

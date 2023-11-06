@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import Screenshot from "./screenshot";
-import ProjectOverview from "./projectOverview";
-import ProjectInfo from "./projectInfo";
-import ProjectRoll from "./projectRoll";
-import Review from "./review";
+import ProjectOverview from "./overview";
+import ProjectLink from "./link";
+import ProjectRoll from "./roll";
+import ProjectReview from "./review";
 
 const ProjectCard = () => {
   return (
@@ -11,9 +11,9 @@ const ProjectCard = () => {
       <Screenshot />
       <div className="description">
         <ProjectOverview />
-        <ProjectInfo />
+        <ProjectLink />
         <ProjectRoll />
-        <Review />
+        <ProjectReview />
       </div>
     </Container>
   );
@@ -26,7 +26,6 @@ const Container = styled.div`
   border-radius: 0.4rem;
 
   height: 100%;
-  /* max-width: 1300px; */
   padding: 48px;
 
   margin-top: 48px;
