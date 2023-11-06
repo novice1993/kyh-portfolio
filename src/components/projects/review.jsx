@@ -1,32 +1,35 @@
 import { useDispatch } from "react-redux";
 import { setReadme } from "../../reducer/readme_reducer";
 import styled from "styled-components";
+import { projectReview01, projectReview02 } from "../../constant/constant";
 
-const ProjectReview = () => {
+const ProjectReview = ({ projectData }) => {
+  const reviews = projectData.review;
   const dispatch = useDispatch();
 
   const handleSetReadme = () => {
     dispatch(setReadme(true));
   };
 
-  return (
-    <Container>
-      <div className="categoryTitle">
-        <div className="titleBox">
-          <span>☑️ 문제점 및 해결방안</span>
-          <button onClick={handleSetReadme}>자세히 보기 ▶︎ README</button>
-        </div>
-      </div>
-      <ul>
-        <li>
-          <div>
-            <span>폴더 구조 잡기</span>
+  if (reviews.length === 0) {
+    return null;
+  } else {
+    return (
+      <Container>
+        <div className="categoryTitle">
+          <div className="titleBox">
+            <span>{projectReview01}</span>
+            <button onClick={handleSetReadme}>{projectReview02}</button>
           </div>
-        </li>
-        <li>코드 가독성 증진</li>
-      </ul>
-    </Container>
-  );
+        </div>
+        <ul>
+          {reviews.map((review) => (
+            <li key={review}>{review}</li>
+          ))}
+        </ul>
+      </Container>
+    );
+  }
 };
 
 export default ProjectReview;

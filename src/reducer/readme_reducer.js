@@ -6,7 +6,10 @@ const readmeSlice = createSlice({
   name: "readmeSlice",
   initialState: initialState,
   reducers: {
-    setReadme: (_, action) => action.payload,
+    setReadme: (state, action) => {
+      state = action.payload;
+      return state;
+    },
   },
 });
 

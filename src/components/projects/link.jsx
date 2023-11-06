@@ -1,25 +1,25 @@
 import styled from "styled-components";
+import { projectLink } from "../../constant/constant";
 
-const ProjectLink = () => {
+const ProjectLink = ({ projectData }) => {
+  const links = projectData.link;
+
   return (
     <Container>
-      <div className="categoryTitle">☑️ 링크</div>
+      <div className="categoryTitle">{projectLink}</div>
       <ul>
-        <li>
-          <div className="categoryBox">
-            <div className="category"> 배포 링크 바로 가기</div>
-          </div>
-        </li>
-        <li>
-          <div className="categoryBox">
-            <div className="category">깃허브 링크 바로 가기</div>
-          </div>
-        </li>
-        <li>
-          <div className="categoryBox">
-            <div className="category">회고 링크 바로 가기</div>
-          </div>
-        </li>
+        {links.map((link) => {
+          const url = link.url;
+          const name = link.name;
+
+          return (
+            <li key={name}>
+              <a href={url} target="_blank" rel="noreferrer">
+                {name}
+              </a>
+            </li>
+          );
+        })}
       </ul>
     </Container>
   );
@@ -47,5 +47,14 @@ const Container = styled.ul`
   & li {
     margin-left: 24px;
     line-height: 26px;
+
+    & a {
+      color: #222222;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      &:hover {
+        color: #1d809f;
+      }
+    }
   }
 `;

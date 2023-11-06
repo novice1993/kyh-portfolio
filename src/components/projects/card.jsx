@@ -5,15 +5,15 @@ import ProjectLink from "./link";
 import ProjectRoll from "./roll";
 import ProjectReview from "./review";
 
-const ProjectCard = () => {
+const ProjectCard = ({ projectData }) => {
   return (
     <Container>
-      <Screenshot />
+      <Screenshot projectData={projectData} />
       <div className="description">
-        <ProjectOverview />
-        <ProjectLink />
-        <ProjectRoll />
-        <ProjectReview />
+        <ProjectOverview projectData={projectData} />
+        <ProjectLink projectData={projectData} />
+        <ProjectRoll projectData={projectData} />
+        <ProjectReview projectData={projectData} />
       </div>
     </Container>
   );
@@ -24,6 +24,7 @@ export default ProjectCard;
 const Container = styled.div`
   background-color: #f5f5f5;
   border-radius: 0.4rem;
+  max-width: 67vw;
 
   height: 100%;
   padding: 48px;

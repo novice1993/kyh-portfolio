@@ -1,40 +1,59 @@
 import styled from "styled-components";
+import {
+  projectOverview01,
+  projectOverview02,
+  projectOverview03,
+  projectOverview04,
+  projectOverview05,
+} from "../../constant/constant";
 
-const ProjectOverview = () => {
+const ProjectOverview = ({ projectData }) => {
+  const description = projectData.description;
+  const duration = projectData.duration;
+  const member = projectData.member;
+  const stacks = projectData.stack;
+
   return (
     <Container>
-      <div className="categoryTitle">☑️ 개요</div>
+      <div className="categoryTitle">{projectOverview01}</div>
       <div className="category">
         <div>
-          <span>✔︎ 프로젝트 설명</span>
-          <ul>
-            <li>요구사항 명세서와 디자인 시안 기반으로 제작한 쇼핑몰 사이트입니다</li>
-            <li>총 3개의 페이지로 구성되어 있습니다 (메인, 상품 리스트, 즐겨찾기)</li>
-            <li> 전체 상품 조회, 카테고리 별 조회, 즐겨찾기 추가/제거 가능합니다</li>
+          <span>{projectOverview02}</span>
+          <ul className="description">
+            {description.map((text) => (
+              <li key={text}>{text}</li>
+            ))}
           </ul>
         </div>
 
         <div>
-          <span>✔︎ 제작 기간</span>
+          <span>{projectOverview03}</span>
           <ul>
-            <li>1주일 (2023. 08)</li>
+            <li>{duration}</li>
           </ul>
         </div>
 
         <div>
-          <span>✔︎ 참여 인원</span>
+          <span>{projectOverview04}</span>
           <ul>
-            <li>1명</li>
+            <li>{member}</li>
           </ul>
         </div>
 
         <div>
-          <span>✔︎ 기술스택</span>
+          <span>{projectOverview05}</span>
           <div className="stack">
-            <img src="https://img.shields.io/badge/TypeScript-yellow.svg?&style=for-the-badge&logo=typescript&logoColor=#3178C6" />
-            <img src="https://img.shields.io/badge/React-darkgreen.svg?&style=for-the-badge&logo=react&logoColor=#61DAFB" />
-            <img src="https://img.shields.io/badge/Redux-purple.svg?&style=for-the-badge&logo=redux&logoColor=#764ABC" />
-            <img src="https://img.shields.io/badge/styled components-darkgray.svg?&style=for-the-badge&logo=styledcomponents&logoColor=#DB7093" />
+            {stacks.map((stack) => {
+              const name = stack.name;
+              const logo = stack.logo;
+
+              return (
+                <img
+                  key={name}
+                  src={`https://img.shields.io/badge/${name}.svg?&style=for-the-badge&logo=${logo}`}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
@@ -76,6 +95,10 @@ const Container = styled.div`
     flex-direction: column;
   }
 
+  .description {
+    font-size: 0.9em;
+  }
+
   & li {
     line-height: 26px;
   }
@@ -84,6 +107,7 @@ const Container = styled.div`
     padding-left: 4px;
     margin-top: 12px;
     display: flex;
+    flex-wrap: wrap;
     gap: 3px;
   }
 `;

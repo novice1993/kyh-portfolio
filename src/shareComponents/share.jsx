@@ -33,7 +33,7 @@ export const Container = ({ id, title, titleColor, bgColor, children }) => {
 const Wrraper = styled.div`
   background-color: ${(props) => (props.bgColor ? `${props.bgColor}` : "white")};
 
-  width: 100vw;
+  width: 100%;
   min-height: calc(100vh - 145px);
   padding: 64px 32px 96px 32px;
   display: flex;

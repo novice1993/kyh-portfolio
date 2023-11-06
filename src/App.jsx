@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { debounce } from "lodash";
 import { setScrollY } from "./reducer/scroll_reducer";
 
 import Layout from "./layout";
@@ -31,12 +32,17 @@ function App() {
 
   return (
     <Layout>
-      <Introduce />
-      <AboutMe />
-      <Skills />
-      <Projects />
-      <GoUpButton buttonText="🔝" />
-      {isReadme && <Readme />}
+      {!isReadme ? (
+        <>
+          <Introduce />
+          <AboutMe />
+          <Skills />
+          <Projects />
+          <GoUpButton buttonText="🔝" />
+        </>
+      ) : (
+        <Readme />
+      )}
     </Layout>
   );
 }

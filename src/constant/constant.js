@@ -31,5 +31,17 @@ export const carrerTitle = "🧑🏻‍💻 커리어";
 export const carrer = "농협 재직ㅣ2021.04 ~ 2023.01 (1년 9개월)";
 export const carrerContent = "- 담당 업무 : 여/수신 및 총무";
 
+// project
+export const projectOverview01 = "☑️ 개요";
+export const projectOverview02 = "✔︎ 프로젝트 설명";
+export const projectOverview03 = "✔︎ 제작 기간";
+export const projectOverview04 = "✔︎ 참여 인원";
+export const projectOverview05 = "✔︎ 기술스택";
+
+export const projectLink = "☑️ 링크";
+export const projectRoll = "☑️ 구현 내역";
+export const projectReview01 = "☑️ 고민한 부분";
+export const projectReview02 = "자세히 보기 ▶︎ README";
+
 // strength
 export const strengthGuideMent = "✓ 이미지 클릭 시 조회가 가능합니다";

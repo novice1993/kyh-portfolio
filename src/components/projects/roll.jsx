@@ -1,14 +1,17 @@
 import styled from "styled-components";
+import { projectRoll } from "../../constant/constant";
 
-const ProjectRoll = () => {
+const ProjectRoll = ({ projectData }) => {
+  const rolls = projectData.roll;
+  const review = projectData.review;
+
   return (
-    <Container>
-      <div className="categoryTitle">☑️ 구현 내역</div>
+    <Container review={review.length}>
+      <div className="categoryTitle">{projectRoll}</div>
       <ul>
-        <li>페이지 라우팅 (메인, 상품 리스트, 즐겨찾기)</li>
-        <li>상품 리스트 무한 스크롤</li>
-        <li>상품 카테고리 별 필터링</li>
-        <li>토스트 메세지 (즐겨찾기 추가/제거)</li>
+        {rolls.map((roll) => (
+          <li key={roll}>{roll}</li>
+        ))}
       </ul>
     </Container>
   );
@@ -20,7 +23,7 @@ const Container = styled.ul`
   position: relative;
   margin-top: 28px;
   padding-bottom: 28px;
-  border-bottom: 1px solid darkgray;
+  border-bottom: ${(props) => (props.review === 0 ? "none" : "1px solid darkgray")};
 
   .categoryTitle {
     font-size: 24px;
