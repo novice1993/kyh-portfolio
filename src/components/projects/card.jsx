@@ -27,7 +27,7 @@ const Container = styled.div`
   border-radius: 0.4rem;
   max-width: 67vw;
 
-  ${mediaQuery.laptop} {
+  ${mediaQuery.description} {
     max-width: 73vw;
   }
 
