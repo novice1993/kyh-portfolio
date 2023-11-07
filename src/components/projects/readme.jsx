@@ -24,6 +24,7 @@ const Readme = ({ reviewData, changeReviewNum }) => {
       : "3️⃣ 구현 코드";
 
   const dispatch = useDispatch();
+
   const handleCloseReadme = () => {
     dispatch(setReadme(false));
     changeReviewNum(0);
