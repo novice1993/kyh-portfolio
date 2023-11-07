@@ -1,16 +1,32 @@
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { setReadme } from "../../reducer/readme_reducer";
+import { setPreviousScroll } from "../../reducer/previousScroll_reducer";
 import styled from "styled-components";
 import { projectReview01, projectReview02 } from "../../constant/constant";
 import { mediaQuery } from "../../style/globalStyle";
 
+import { useEffect } from "react";
+
 const ProjectReview = ({ projectData }) => {
   const reviews = projectData.review;
   const dispatch = useDispatch();
+  const isReadme = useSelector((state) => state.isReadme);
+  const previousScroll = useSelector((state) => state.previousScroll);
 
   const handleSetReadme = () => {
+    // readme 모달창 열기
     dispatch(setReadme(true));
+
+    // 이전 스크롤 높이 기억
+    const scrollHeight = window.scrollY;
+    dispatch(setPreviousScroll(scrollHeight));
   };
+
+  useEffect(() => {
+    if (!isReadme) {
+      window.scrollTo(0, previousScroll);
+    }
+  }, [isReadme]);
 
   if (reviews.length === 0) {
     return null;

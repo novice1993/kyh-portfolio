@@ -22,6 +22,13 @@ function App() {
   const handleChangeStockReviewNum = (reviewNum) => {
     dispatch(changeStockReview(reviewNum));
   };
+
+  useEffect(() => {
+    if (!isReadme) {
+      console.log("모달창 OFF");
+    }
+  }, [isReadme]);
+
   // const [previousScrollY, setPreviousScrollY] = useState(0);
 
   // const debouncedSetPreviousScrollY = debounce((scrollY) => {
