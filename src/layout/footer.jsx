@@ -2,13 +2,23 @@ import styled from "styled-components";
 import velogLogo from "../asset/url_icon/velogLogo.png";
 import githubLogo from "../asset/url_icon/githubLogo.png";
 import { footerTitle, phoneNum, email, githubUrl, blogUrl } from "../constant/constant";
+import { mediaQuery } from "../style/globalStyle";
 
 const Footer = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <Container>
       <div className="container">
         <div className="profile">
-          <span className="title">{footerTitle}</span>
+          <span className="title" onClick={handleScrollToTop}>
+            {footerTitle}
+          </span>
           <span>{phoneNum}</span>
           <span>{email}</span>
         </div>
@@ -58,12 +68,28 @@ const Container = styled.footer`
 
     font-size: 16px;
     color: #2f2c2ce1;
+
+    ${mediaQuery.layout} {
+      font-size: 15px;
+    }
   }
 
   .title {
     color: black;
     font-weight: 900;
     font-size: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    ${mediaQuery.layout} {
+      font-size: 18px;
+    }
+
+    ${mediaQuery.min} {
+      display: none;
+    }
   }
 
   .url {
@@ -75,6 +101,10 @@ const Container = styled.footer`
       width: 36px;
       &:hover {
         cursor: pointer;
+      }
+
+      ${mediaQuery.layout} {
+        width: 24px;
       }
     }
   }

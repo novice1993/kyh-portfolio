@@ -71,7 +71,7 @@ export const stockHolm = {
 export const cozShopping = {
   screenShot: [coz01, coz02, coz03, coz04, coz05],
   description: [
-    "주어진 요구사항 명세서와 디자인 시안 기반으로 제작한 쇼핑몰 사이트입니다",
+    "요구사항 명세서와 디자인 시안 기반으로 제작한 쇼핑몰 사이트입니다",
     "총 3개의 페이지로 구성되어 있습니다 (메인, 상품 리스트, 즐겨찾기)",
     "전체 상품 조회, 카테고리 별 조회, 즐겨찾기 추가/제거 가능합니다",
   ],

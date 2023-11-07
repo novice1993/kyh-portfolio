@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { projectRoll } from "../../constant/constant";
+import { mediaQuery } from "../../style/globalStyle";
 
 const ProjectRoll = ({ projectData }) => {
   const rolls = projectData.roll;
@@ -29,12 +30,20 @@ const Container = styled.ul`
     font-size: 24px;
     padding-bottom: 18px;
     font-weight: 600;
+
+    ${mediaQuery.min} {
+      font-size: 16px;
+    }
   }
 
   & ul {
     display: flex;
     flex-direction: column;
     list-style-type: disc;
+
+    ${mediaQuery.min} {
+      font-size: 14px;
+    }
   }
 
   & li {

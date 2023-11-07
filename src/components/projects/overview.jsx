@@ -6,6 +6,7 @@ import {
   projectOverview04,
   projectOverview05,
 } from "../../constant/constant";
+import { mediaQuery } from "../../style/globalStyle";
 
 const ProjectOverview = ({ projectData }) => {
   const description = projectData.description;
@@ -71,12 +72,20 @@ const Container = styled.div`
     font-size: 24px;
     padding-bottom: 18px;
     font-weight: 600;
+
+    ${mediaQuery.min} {
+      font-size: 16px;
+    }
   }
 
   .category {
     display: flex;
     flex-direction: column;
     gap: 28px;
+
+    ${mediaQuery.min} {
+      font-size: 14px;
+    }
 
     & div {
       margin-left: 6px;
@@ -86,6 +95,10 @@ const Container = styled.div`
   & span {
     font-size: 18px;
     font-weight: 550;
+
+    ${mediaQuery.min} {
+      font-size: 15px;
+    }
   }
 
   & ul {
@@ -96,7 +109,17 @@ const Container = styled.div`
   }
 
   .description {
-    font-size: 0.9em;
+    ${mediaQuery.description} {
+      font-size: 14px;
+    }
+
+    ${mediaQuery.projects} {
+      font-size: 16px;
+    }
+
+    ${mediaQuery.min} {
+      font-size: 14px;
+    }
   }
 
   & li {

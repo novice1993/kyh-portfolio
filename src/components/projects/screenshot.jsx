@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import { mediaQuery } from "../../style/globalStyle";
 
 const contour = "/";
 
@@ -39,12 +40,17 @@ export default Screenshot;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 100%;
 
   & img {
     border: 1px solid darkgray;
     border-radius: 0.4rem;
     width: 30vw;
+
+    ${mediaQuery.projects} {
+      width: 100%;
+    }
   }
 
   .shotNumBox {

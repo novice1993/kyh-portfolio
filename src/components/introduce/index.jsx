@@ -2,6 +2,7 @@ import styled from "styled-components";
 import background from "../../asset/background.jpg";
 import Arrow from "./arrow";
 import { title01, title02, introduceMent01, introduceMent02 } from "../../constant/constant";
+import { mediaQuery } from "../../style/globalStyle";
 
 const learnMoreBtnText = "Learn More";
 
@@ -56,6 +57,10 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     gap: 5px;
+
+    ${mediaQuery.min} {
+      font-size: 26px;
+    }
   }
 `;
 
@@ -63,6 +68,10 @@ const Divider = styled.div`
   width: 52px;
   border: 3px solid #f5f5f5;
   margin: 24px 0px 24px 0px;
+
+  ${mediaQuery.min} {
+    width: 38px;
+  }
 `;
 
 const InroduceMent = styled.div`
@@ -73,6 +82,10 @@ const InroduceMent = styled.div`
   align-items: center;
   gap: 5px;
   margin: 12px 0px 36px 0px;
+
+  ${mediaQuery.min} {
+    font-size: 16px;
+  }
 `;
 
 const LearnMoreBtn = styled.button`
@@ -82,4 +95,8 @@ const LearnMoreBtn = styled.button`
   border-radius: 2rem;
   border: none;
   box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.25);
+
+  ${mediaQuery.min} {
+    font-size: 16px;
+  }
 `;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Container } from "../../shareComponents/share";
 import StackCard from "./stackCard";
 import { stackData } from "./stackData";
+import { mediaQuery } from "../../style/globalStyle";
 
 const Skills = () => {
   return (
@@ -26,4 +27,8 @@ const GridBox = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+
+  ${mediaQuery.skills} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;

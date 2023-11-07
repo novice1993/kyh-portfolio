@@ -4,6 +4,7 @@ import ProjectOverview from "./overview";
 import ProjectLink from "./link";
 import ProjectRoll from "./roll";
 import ProjectReview from "./review";
+import { mediaQuery } from "../../style/globalStyle";
 
 const ProjectCard = ({ projectData }) => {
   return (
@@ -26,12 +27,20 @@ const Container = styled.div`
   border-radius: 0.4rem;
   max-width: 67vw;
 
+  ${mediaQuery.laptop} {
+    max-width: 73vw;
+  }
+
   height: 100%;
   padding: 48px;
 
   margin-top: 48px;
   display: flex;
   gap: 48px;
+
+  ${mediaQuery.projects} {
+    flex-direction: column;
+  }
 
   .description {
     display: flex;

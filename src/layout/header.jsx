@@ -1,7 +1,8 @@
 import { useRef } from "react";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
-import { headerTitle, category01, category02, category03, category04 } from "../constant/constant";
+import { headerTitle, category01, category02, category03 } from "../constant/constant";
+import { mediaQuery } from "../style/globalStyle";
 
 const Header = () => {
   const ref = useRef(null);
@@ -38,7 +39,6 @@ const Header = () => {
           <span onClick={() => handleMoveScroll("#aboutMe")}>{category01}</span>
           <span onClick={() => handleMoveScroll("#skills")}>{category02}</span>
           <span onClick={() => handleMoveScroll("#projects")}>{category03}</span>
-          {/* <span onClick={() => handleMoveScroll("#strength")}>{category04}</span> */}
         </div>
       </div>
     </Container>
@@ -79,6 +79,14 @@ const Container = styled.div`
     &:hover {
       cursor: pointer;
     }
+
+    ${mediaQuery.layout} {
+      font-size: 22px;
+    }
+
+    ${mediaQuery.min} {
+      font-size: 20px;
+    }
   }
 
   .category {
@@ -87,9 +95,21 @@ const Container = styled.div`
     flex-direction: row;
     gap: 20px;
 
+    ${mediaQuery.layout} {
+      font-size: 16px;
+    }
+
+    ${mediaQuery.min} {
+      font-size: 14px;
+    }
+
     & span {
       &:hover {
         cursor: pointer;
+      }
+
+      ${mediaQuery.tablet} {
+        display: none;
       }
     }
   }

@@ -7,6 +7,7 @@ import {
   eduContent02,
   eduContent03,
 } from "../../constant/constant";
+import { mediaQuery } from "../../style/globalStyle";
 
 const Education = () => {
   return (
@@ -37,6 +38,10 @@ const Container = styled.section`
 
   h2 {
     margin-bottom: 20px;
+
+    ${mediaQuery.min} {
+      font-size: 22px;
+    }
   }
 
   ul {
@@ -45,6 +50,10 @@ const Container = styled.section`
     padding-left: 28px;
     font-size: 18px;
     gap: 14px;
+
+    ${mediaQuery.min} {
+      font-size: 16px;
+    }
   }
 
   ol {
@@ -58,6 +67,10 @@ const Container = styled.section`
       font-size: 15px;
       color: #716c6c;
       margin-top: 8px;
+
+      ${mediaQuery.min} {
+        font-size: 14px;
+      }
     }
   }
 `;

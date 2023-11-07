@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux";
 import { setReadme } from "../../reducer/readme_reducer";
 import styled from "styled-components";
 import { projectReview01, projectReview02 } from "../../constant/constant";
+import { mediaQuery } from "../../style/globalStyle";
 
 const ProjectReview = ({ projectData }) => {
   const reviews = projectData.review;
@@ -43,6 +44,10 @@ const Container = styled.ul`
     padding-bottom: 18px;
     font-weight: 600;
 
+    ${mediaQuery.min} {
+      font-size: 16px;
+    }
+
     .titleBox {
       display: flex;
       align-items: center;
@@ -54,6 +59,10 @@ const Container = styled.ul`
     display: flex;
     flex-direction: column;
     list-style-type: disc;
+
+    ${mediaQuery.min} {
+      font-size: 14px;
+    }
   }
 
   & li {
@@ -75,6 +84,10 @@ const Container = styled.ul`
     margin-bottom: 2.2px;
     border: none;
     border-radius: 0.25rem;
+
+    ${mediaQuery.min} {
+      font-size: 10px;
+    }
 
     &:hover {
       cursor: pointer;

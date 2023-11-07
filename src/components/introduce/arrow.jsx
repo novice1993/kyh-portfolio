@@ -1,11 +1,18 @@
 import styled from "styled-components";
 import Lottie from "react-lottie-player";
 import arrow from "../../asset/arrow.json";
+import { mediaQuery } from "../../style/globalStyle";
 
 const Arrow = () => {
   return (
     <Container>
-      <Lottie loop animationData={arrow} style={{ width: "95px" }} play speed={2.6} />
+      <Lottie
+        loop
+        animationData={arrow}
+        style={{ width: mediaQuery.min ? "65px" : "95px" }}
+        play
+        speed={2.6}
+      />
     </Container>
   );
 };

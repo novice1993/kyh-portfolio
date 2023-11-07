@@ -1,7 +1,8 @@
+import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useSelector, useDispatch } from "react-redux";
 import { setReadme } from "../../reducer/readme_reducer";
-import styled from "styled-components";
+import { mediaQuery } from "../../style/globalStyle";
 
 import { problemList } from "./projectData";
 import { readmeTitle01, readmeTitle02 } from "../../constant/constant";
@@ -19,12 +20,13 @@ const Readme = ({ reviewData, changeReviewNum }) => {
     stockReviewNum === 0
       ? "3️⃣ 고민했던 부분 (Query Key의 동적인 부여)"
       : stockReviewNum === 3
-      ? "3️⃣ 구현 코드 (자동 로그아웃 함수, 브라우저 종료/새로고침 시 처리 로직)"
+      ? "3️⃣ 구현 코드 (자동 로그아웃 함수, 종료/새로고침 시 처리 로직)"
       : "3️⃣ 구현 코드";
 
   const dispatch = useDispatch();
   const handleCloseReadme = () => {
     dispatch(setReadme(false));
+    changeReviewNum(0);
   };
 
   return (
@@ -223,6 +225,10 @@ const ContentBox = styled.div`
   width: 100%;
   height: calc(100vh - 60px);
 
+  ${mediaQuery.readme02} {
+    flex-direction: column;
+  }
+
   & ul {
     margin-top: 6px;
     padding: 0 24px 0 24px;
@@ -247,9 +253,25 @@ const ContentBox = styled.div`
     .listTitle {
       font-size: 20px;
       font-weight: 600;
+
+      ${mediaQuery.readme01} {
+        font-size: 18px;
+      }
+
+      ${mediaQuery.readme02} {
+        font-size: 20px;
+      }
     }
 
     & li {
+      ${mediaQuery.readme01} {
+        font-size: 13px;
+      }
+
+      ${mediaQuery.readme02} {
+        font-size: 16px;
+      }
+
       &:hover {
         cursor: pointer;
         color: #736e6e;
@@ -306,6 +328,10 @@ const ContentBox = styled.div`
           margin-bottom: 14px;
           text-align: center;
           color: #222222;
+
+          ${mediaQuery.min} {
+            text-align: left;
+          }
         }
       }
     }
@@ -318,6 +344,11 @@ const StockReadme03 = styled.div`
   display: flex;
   gap: 24px;
 
+  ${mediaQuery.min} {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .description {
     height: max-content;
     width: max-content;
@@ -327,6 +358,11 @@ const StockReadme03 = styled.div`
     color: #222222;
     display: flex;
     flex-direction: column;
+
+    ${mediaQuery.min} {
+      width: 100%;
+      font-size: 15px;
+    }
   }
 
   & ul {
