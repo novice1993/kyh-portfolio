@@ -24,6 +24,10 @@ const Container = styled.div`
   bottom: 104px;
   width: 100%;
 
+  @media (max-height: 550px) {
+    display: none;
+  }
+
   display: flex;
   justify-content: center;
   align-items: center;

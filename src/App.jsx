@@ -1,6 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
-import { useEffect, useState } from "react";
-import { debounce } from "lodash";
+import { useEffect } from "react";
 import { setScrollY } from "./reducer/scroll_reducer";
 import { changeStockReview } from "./reducer/stockReview_reducer";
 
@@ -22,20 +21,6 @@ function App() {
   const handleChangeStockReviewNum = (reviewNum) => {
     dispatch(changeStockReview(reviewNum));
   };
-
-  useEffect(() => {
-    if (!isReadme) {
-      console.log("모달창 OFF");
-    }
-  }, [isReadme]);
-
-  // const [previousScrollY, setPreviousScrollY] = useState(0);
-
-  // const debouncedSetPreviousScrollY = debounce((scrollY) => {
-  //   if (scrollY > 0 && scrollY !== undefined) {
-  //     setPreviousScrollY(scrollY);
-  //   }
-  // }, 300);
 
   // 스크롤 높이에 따라 전역상태 boolean 값 변경
   const handleScroll = () => {
