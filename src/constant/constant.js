@@ -43,5 +43,9 @@ export const projectRoll = "☑️ 구현 내역";
 export const projectReview01 = "☑️ 고민한 부분";
 export const projectReview02 = "자세히 보기 ▶︎ README";
 
+// readme
+export const readmeTitle01 = "1️⃣ 문제 상황";
+export const readmeTitle02 = "2️⃣ 해결 방법";
+
 // strength
 export const strengthGuideMent = "✓ 이미지 클릭 시 조회가 가능합니다";
