@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setReadme } from "../../reducer/readme_reducer";
 import { mediaQuery } from "../../style/globalStyle";
@@ -15,6 +16,7 @@ const Readme = ({ reviewData, changeReviewNum }) => {
   const problemResolve = reviewData.resolve;
   const problemStruggle = reviewData.struggle;
 
+  const ref = useRef(null);
   const stockReviewNum = useSelector((state) => state.stockReviewNum);
   const struggleTitle =
     stockReviewNum === 0
@@ -29,6 +31,12 @@ const Readme = ({ reviewData, changeReviewNum }) => {
     dispatch(setReadme(false));
     changeReviewNum(0);
   };
+
+  useEffect(() => {
+    if (ref.current !== null) {
+      ref.current.scrollTop = 0;
+    }
+  }, [stockReviewNum]);
 
   return (
     <Container>
@@ -56,7 +64,7 @@ const Readme = ({ reviewData, changeReviewNum }) => {
             </div>
           </div>
 
-          <div className="review">
+          <div className="review" ref={ref}>
             {/* 1. 문제 상황 */}
             <div className="situation">
               <h2>{readmeTitle01}</h2>
@@ -130,8 +138,8 @@ const Readme = ({ reviewData, changeReviewNum }) => {
                   return (
                     <li key={contentTitle}>
                       <div className="contentTitle">{contentTitle}</div>
-                      {descriptions.map((description) => (
-                        <div key={description}>{description}</div>
+                      {descriptions.map((description, idx) => (
+                        <div key={description + idx}>{description}</div>
                       ))}
                     </li>
                   );
