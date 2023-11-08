@@ -15,8 +15,8 @@ export const blogUrl = "https://velog.io/@novice93";
 // introduce component
 export const title01 = "웹 프론트엔드 개발자";
 export const title02 = "김영학입니다";
-export const introduceMent01 = "함께 협업한 팀원들에게 명료하고 논리정연 하다는 평을 받습니다";
-export const introduceMent02 = "핵심을 명확히 파악하며 명확하게 소통하는 능력을 갖췄습니다";
+export const introduceMent01 = "핵심을 명확히 파악하며 논리정연 하게 의사소통 합니다";
+export const introduceMent02 = "기획 및 개발 시에도 명확함과 논리정연함을 추구합니다";
 
 // AboutMe - Education
 export const educationTitle = "📚 교육";

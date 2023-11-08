@@ -106,6 +106,7 @@ const Container = styled.div`
     margin-left: 28px;
     display: flex;
     flex-direction: column;
+    white-space: pre-wrap;
   }
 
   .description {

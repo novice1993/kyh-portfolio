@@ -3,7 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 import styled from "styled-components";
-import link from "../asset/link.png";
+import check from "../asset/check.png";
 
 export const Container = ({ id, title, titleColor, bgColor, children }) => {
   useEffect(() => {
@@ -22,7 +22,7 @@ export const Container = ({ id, title, titleColor, bgColor, children }) => {
   return (
     <Wrraper bgColor={bgColor} id={id} titleColor={titleColor}>
       <div className="container">
-        <img className="image" src={link} />
+        <img className="image" src={check} />
         <h1 className="title">{title}</h1>
       </div>
       <div data-aos="fade-down">{children}</div>
