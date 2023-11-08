@@ -8,7 +8,7 @@
 스크롤 이벤트와 애니메이션을 활용하여 부드러운 느낌이 나도록 구현하였고 <br/>
 미디어쿼리를 활용하여 반응형 UI를 구현하였습니다 (PC, 노트북, 태블릿PC 고려) <br/>
 
-레이아웃 구상 시 Start Bootstrap 무료 템플릿을 참고하였으나 ( <a href='https://startbootstrap.com/theme/creative'>참고 사이트</a> )<br/>
+✔︎ 레이아웃 구상 시 Start Bootstrap 무료 템플릿을 참고하였으나 ( <a href='https://startbootstrap.com/theme/creative'>참고 사이트</a> )<br/>
 내부 UI는 모두 직접 구상하였으며, 소스코드 역시 모두 직접 작성하였습니다
 <br/>
 
