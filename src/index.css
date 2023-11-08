@@ -1,4 +1,10 @@
+@font-face {
+  font-family: "customFont";
+  src: url("../src/asset/font/SpoqaHanSansNeo-Regular.ttf") format("openType");
+}
+
 * {
+  font-family: "customFont", sans-serif;
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
