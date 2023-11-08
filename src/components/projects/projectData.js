@@ -10,6 +10,10 @@ import coz03 from "../../asset/project/coz03.gif";
 import coz04 from "../../asset/project/coz04.gif";
 import coz05 from "../../asset/project/coz05.gif";
 
+import port01 from "../../asset/project/portfolio01.gif";
+import port02 from "../../asset/project/portfolio02.gif";
+import port03 from "../../asset/project/portfolio03.gif";
+
 import stockReview01 from "../../asset/review/stockReview01.gif";
 import stockReview02 from "../../asset/review/stockReview02.png";
 import stockReview03 from "../../asset/review/stockReview03.gif";
@@ -104,6 +108,42 @@ export const cozShopping = {
     "상품 카테고리 별 필터링",
     "즐겨찾기 추가/제거 (토스트 메세지 발생)",
   ],
+  review: [],
+};
+
+// kyh-portfolio
+export const portfolio = {
+  screenShot: [port01, port02, port03],
+  description: [
+    "개인용 포트폴리오 목적의 웹 사이트입니다",
+    "유저 입장에서 직관적이며 간결한 느낌을 받을 수 있도록 구현하였습니다",
+    "스크롤 이벤트와 애니메이션을 활용해 부드러운 느낌이 나도록 구현하였습니다",
+    "미디어쿼리를 활용하여 반응형 UI를 구현하였습니다 (PC, 노트북, 태블릿PC 고려)",
+    `레이아웃 구상 시 Start Bootstrap 무료 템플릿을 참고하였으나 (아래 링크 첨부)
+내부 UI는 모두 직접 구상하였으며, 소스코드 역시 모두 직접 작성하였습니다`,
+  ],
+  duration: "1주 (2023. 11)",
+  member: "1명",
+  stack: [
+    { name: "JavaScript-blue", logo: "javascript&logoColor=#F7DF1E" },
+    {
+      name: "React-darkgreen",
+      logo: "react&logoColor=#61DAFB",
+    },
+    { name: "Redux-purple", logo: "redux&logoColor=#764ABC" },
+    { name: "styled components-darkgray", logo: "styledcomponents&logoColor=#DB7093" },
+  ],
+  link: [
+    {
+      url: "https://startbootstrap.com/theme/creative",
+      name: "레이아웃 참고 사이트",
+    },
+    {
+      url: "https://github.com/novice1993/kyh-portfolio",
+      name: "깃허브 바로 가기",
+    },
+  ],
+  roll: ["스크롤 이벤트 및 애니메이션 효과 적용", "미디어쿼리 활용한 반응형 구현"],
   review: [],
 };
 

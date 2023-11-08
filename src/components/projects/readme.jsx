@@ -251,6 +251,10 @@ const ContentBox = styled.div`
     flex: 1.18 0 0;
     max-width: 475px;
 
+    ${mediaQuery.readme02} {
+      flex: 1 0 0;
+    }
+
     .problemBox {
       margin: 24px 28px 24px 28px;
       padding: 20px 12px 20px 18px;
@@ -268,7 +272,7 @@ const ContentBox = styled.div`
       }
 
       ${mediaQuery.readme02} {
-        font-size: 20px;
+        font-size: 18px;
       }
     }
 
@@ -278,7 +282,8 @@ const ContentBox = styled.div`
       }
 
       ${mediaQuery.readme02} {
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 22px;
       }
 
       &:hover {
@@ -296,6 +301,10 @@ const ContentBox = styled.div`
     flex: 2.1 0 0;
     border-left: 1.5px solid darkgray;
     overflow-y: scroll;
+
+    ${mediaQuery.readme02} {
+      flex: 5 0 0;
+    }
 
     & h2 {
       margin-bottom: 18px;
