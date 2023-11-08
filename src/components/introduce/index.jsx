@@ -2,7 +2,7 @@ import styled from "styled-components";
 import background from "../../asset/background.jpg";
 import Arrow from "./arrow";
 import { title01, title02, introduceMent01, introduceMent02 } from "../../constant/constant";
-import { mediaQuery } from "../../style/globalStyle";
+import { mediaQuery } from "../../style/mediaQuery";
 
 const learnMoreBtnText = "Learn More";
 

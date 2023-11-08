@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Lottie from "react-lottie-player";
 import arrow from "../../asset/arrow.json";
-import { mediaQuery } from "../../style/globalStyle";
+import { mediaQuery } from "../../style/mediaQuery";
 
 const Arrow = () => {
   return (

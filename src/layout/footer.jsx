@@ -2,7 +2,7 @@ import styled from "styled-components";
 import velogLogo from "../asset/url_icon/velogLogo.png";
 import githubLogo from "../asset/url_icon/githubLogo.png";
 import { footerTitle, phoneNum, email, githubUrl, blogUrl } from "../constant/constant";
-import { mediaQuery } from "../style/globalStyle";
+import { mediaQuery } from "../style/mediaQuery";
 
 const Footer = () => {
   const handleScrollToTop = () => {

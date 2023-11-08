@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { carrerTitle, carrer, carrerContent } from "../../constant/constant";
-import { mediaQuery } from "../../style/globalStyle";
+import { mediaQuery } from "../../style/mediaQuery";
 
 const Career = () => {
   return (

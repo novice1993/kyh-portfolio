@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { projectRoll } from "../../constant/constant";
-import { mediaQuery } from "../../style/globalStyle";
+import { mediaQuery } from "../../style/mediaQuery";
 
 const ProjectRoll = ({ projectData }) => {
   const rolls = projectData.roll;

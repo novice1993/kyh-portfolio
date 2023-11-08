@@ -4,7 +4,7 @@ import ProjectOverview from "./overview";
 import ProjectLink from "./link";
 import ProjectRoll from "./roll";
 import ProjectReview from "./review";
-import { mediaQuery } from "../../style/globalStyle";
+import { mediaQuery } from "../../style/mediaQuery";
 
 const ProjectCard = ({ projectData }) => {
   return (

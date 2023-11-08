@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
 import { headerTitle, category01, category02, category03 } from "../constant/constant";
-import { mediaQuery } from "../style/globalStyle";
+import { mediaQuery } from "../style/mediaQuery";
 
 const Header = () => {
   const ref = useRef(null);

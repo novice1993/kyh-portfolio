@@ -3,7 +3,7 @@ import { setReadme } from "../../reducer/readme_reducer";
 import { setPreviousScroll } from "../../reducer/previousScroll_reducer";
 import styled from "styled-components";
 import { projectReview01, projectReview02 } from "../../constant/constant";
-import { mediaQuery } from "../../style/globalStyle";
+import { mediaQuery } from "../../style/mediaQuery";
 
 import { useEffect } from "react";
 

@@ -6,7 +6,7 @@ import {
   projectOverview04,
   projectOverview05,
 } from "../../constant/constant";
-import { mediaQuery } from "../../style/globalStyle";
+import { mediaQuery } from "../../style/mediaQuery";
 
 const ProjectOverview = ({ projectData }) => {
   const description = projectData.description;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Lottie from "react-lottie-player";
 import animation from "../../asset/animation.json";
-import { mediaQuery } from "../../style/globalStyle";
+import { mediaQuery } from "../../style/mediaQuery";
 
 const Animation = () => {
   return (

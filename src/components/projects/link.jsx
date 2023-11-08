@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { projectLink } from "../../constant/constant";
-import { mediaQuery } from "../../style/globalStyle";
+import { mediaQuery } from "../../style/mediaQuery";
 
 const ProjectLink = ({ projectData }) => {
   const links = projectData.link;

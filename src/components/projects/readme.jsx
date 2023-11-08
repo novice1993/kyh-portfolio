@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setReadme } from "../../reducer/readme_reducer";
-import { mediaQuery } from "../../style/globalStyle";
+import { mediaQuery } from "../../style/mediaQuery";
 
 import { problemList } from "./projectData";
 import { readmeTitle01, readmeTitle02 } from "../../constant/constant";

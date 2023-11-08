@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Container } from "../../shareComponents/share";
 import StackCard from "./stackCard";
 import { stackData } from "./stackData";
-import { mediaQuery } from "../../style/globalStyle";
+import { mediaQuery } from "../../style/mediaQuery";
 
 const Skills = () => {
   return (

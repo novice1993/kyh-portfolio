@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { mediaQuery } from "../../style/globalStyle";
+import { mediaQuery } from "../../style/mediaQuery";
 
 const contour = "/";
 

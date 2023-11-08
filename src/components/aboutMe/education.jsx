@@ -7,7 +7,7 @@ import {
   eduContent02,
   eduContent03,
 } from "../../constant/constant";
-import { mediaQuery } from "../../style/globalStyle";
+import { mediaQuery } from "../../style/mediaQuery";
 
 const Education = () => {
   return (
