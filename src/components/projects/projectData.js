@@ -47,15 +47,15 @@ export const stockHolm = {
   link: [
     {
       url: "http://seb008stockholm.s3-website.ap-northeast-2.amazonaws.com/",
-      name: "배포 링크 바로 가기",
+      name: "배포 링크",
     },
     {
       url: "https://github.com/novice1993/StockHolm",
-      name: "깃허브 바로 가기",
+      name: "깃허브 레포지토리",
     },
     {
       url: "https://velog.io/@novice93/%ED%8C%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%AA%A8%EC%9D%98-%EC%A3%BC%EC%8B%9D%ED%88%AC%EC%9E%90-%EC%82%AC%EC%9D%B4%ED%8A%B8-StockHolm",
-      name: "화고 바로 가기",
+      name: "프로젝트 회고",
     },
   ],
   roll: [
@@ -93,14 +93,14 @@ export const cozShopping = {
   link: [
     {
       url: "https://codestates.notion.site/codestates/S4-05073c7f88a942c0ad5e5fcdd68c1dec",
-      name: "요구사항 명세서 바로 가기",
+      name: "요구사항 명세서",
     },
     {
       url: "https://www.figma.com/file/TfWAvMXegGEJiS3etqOSfs/FE-S4-project?node-id=0%3A1&t=cHu4rWaqJ0c5CTVV-1",
-      name: "디자인 시안 바로 가기",
+      name: "디자인 시안",
     },
-    { url: "https://github.com/novice1993/coz-shopping#readme", name: "깃허브 바로 가기" },
-    { url: "https://velog.io/@novice93/rzbekqs8", name: "회고 바로 가기" },
+    { url: "https://github.com/novice1993/coz-shopping#readme", name: "깃허브 레포지토리" },
+    { url: "https://velog.io/@novice93/rzbekqs8", name: "프로젝트 회고" },
   ],
   roll: [
     "페이지 라우팅 (메인, 상품 리스트, 즐겨찾기)",
@@ -140,7 +140,7 @@ export const portfolio = {
     },
     {
       url: "https://github.com/novice1993/kyh-portfolio",
-      name: "깃허브 바로 가기",
+      name: "깃허브 레포지토리",
     },
   ],
   roll: ["스크롤 이벤트 및 애니메이션 효과 적용", "미디어쿼리 활용한 반응형 구현"],
