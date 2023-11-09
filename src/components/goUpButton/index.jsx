@@ -27,7 +27,7 @@ const Container = styled.div`
 const Button = styled.button`
   position: fixed;
   bottom: 90px;
-  right: 15px;
+  right: 13px;
 
   display: flex;
   justify-content: center;
@@ -36,7 +36,7 @@ const Button = styled.button`
 
   background-color: transparent;
   border: none;
-  opacity: 0.4;
+  opacity: 0.6;
 
   &:hover {
     cursor: pointer;
