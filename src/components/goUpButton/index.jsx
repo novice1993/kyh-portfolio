@@ -29,11 +29,6 @@ const Button = styled.button`
   bottom: 103px;
   right: 25px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* padding-top: 4px; */
-
   font-size: 35px;
   width: 48px;
   height: 48px;
