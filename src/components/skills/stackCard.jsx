@@ -37,7 +37,7 @@ const Container = styled.div`
     height: 60px;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 3px;
 
     .description {
       font-size: 12.5px;

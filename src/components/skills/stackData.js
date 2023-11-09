@@ -11,14 +11,14 @@ export const stackData = [
   {
     logo: js,
     stackTitle: "JavaScript",
-    description: `ES6+ 문법을 활용하여 이벤트 및 데이터 처리 등 
-웹 페이지 상호작용을 구현할 수 있습니다`,
+    description: `ES6+ 문법을 활용하여 이벤트 및 데이터 처리 등의 
+상호작용을 구현할 수 있습니다`,
   },
   {
     logo: ts,
     stackTitle: "TypeScript",
-    description: `정적 타입 체크를 통해 코드 안정성 및 유지보수 효율화가 
-가능합니다`,
+    description: `정적 타입 체크를 통해 코드 안정성 제고 및 유지보수
+효율화가 가능합니다`,
   },
   {
     logo: react,
