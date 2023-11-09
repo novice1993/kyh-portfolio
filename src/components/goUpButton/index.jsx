@@ -33,10 +33,13 @@ const Button = styled.button`
   justify-content: center;
   align-items: center;
 
-  font-size: 35px;
-  padding-top: 3px;
-  width: 48px;
-  height: 50px;
+  margin: 0;
+  padding: 0;
+  font-size: 2.2rem;
+  padding-top: 0.2rem;
+  width: 3rem;
+  height: 3rem;
+
   background-color: #f5f5f5;
   color: black;
 

@@ -216,12 +216,15 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2px;
 
-    font-size: 20px;
+    margin: 0;
+    padding: 0;
+
+    padding-top: 0.1rem;
+    font-size: 1.2rem;
     font-weight: bolder;
-    width: 28px;
-    height: 29px;
+    width: 1.8rem;
+    height: 1.8rem;
     background-color: white;
     border: 3px solid black;
     border-radius: 0.3rem;
