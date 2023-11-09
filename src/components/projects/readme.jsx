@@ -213,10 +213,15 @@ const Container = styled.div`
 
   // README 닫기 버튼
   & button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+
     font-size: 20px;
     font-weight: bolder;
     width: 28px;
-    height: 28px;
+    height: 29px;
     background-color: white;
     border: 3px solid black;
     border-radius: 0.3rem;
