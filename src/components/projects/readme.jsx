@@ -220,7 +220,6 @@ const Container = styled.div`
     margin: 0;
     padding: 0;
 
-    padding-top: 0.1rem;
     font-size: 1.2rem;
     font-weight: bolder;
     width: 1.8rem;

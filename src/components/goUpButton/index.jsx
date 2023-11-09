@@ -36,7 +36,6 @@ const Button = styled.button`
   margin: 0;
   padding: 0;
   font-size: 2.2rem;
-  padding-top: 0.2rem;
   width: 3rem;
   height: 3rem;
 
