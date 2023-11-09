@@ -11,20 +11,17 @@ export const stackData = [
   {
     logo: js,
     stackTitle: "JavaScript",
-    description: `ES6+ 문법을 활용하여 이벤트 및 데이터 처리 등의 
-상호작용을 구현할 수 있습니다`,
+    description: `ES6+ 문법을 활용하여 이벤트 및 데이터 처리 등의 상호작용을 구현할 수 있습니다`,
   },
   {
     logo: ts,
     stackTitle: "TypeScript",
-    description: `정적 타입 체크를 통해 코드 안정성 제고 및 유지보수
-효율화가 가능합니다`,
+    description: `정적 타입 체크를 통해 코드 안정성 제고 및 유지보수 효율화가 가능합니다`,
   },
   {
     logo: react,
     stackTitle: "React",
-    description: `재사용 가능한 UI 설계가 가능하며 useMemo 등의 
-hook을 활용하여 성능 최적화가 가능합니다`,
+    description: `재사용 가능한 UI 설계가 가능하며 useMemo 등의 hook을 활용하여 성능 최적화가 가능합니다`,
   },
   {
     logo: next,
@@ -34,8 +31,7 @@ hook을 활용하여 성능 최적화가 가능합니다`,
   {
     logo: redux,
     stackTitle: "Redux",
-    description: `클라이언트 상태 중앙화를 통해 상태관리 복잡성을 
-해결할 수 있습니다`,
+    description: `클라이언트 상태 중앙화를 통해 상태관리 복잡성을 해결할 수 있습니다`,
   },
   {
     logo: reactQuery,
@@ -45,13 +41,11 @@ hook을 활용하여 성능 최적화가 가능합니다`,
   {
     logo: styledComponents,
     stackTitle: "Styled-Components",
-    description: `CSS-in-JS 활용에 익숙하며 동적 스타일링 및 재사용
-가능한 컴포넌트 구현이 가능합니다`,
+    description: `CSS-in-JS 활용에 익숙하며 동적 스타일링 및 재사용 가능한 컴포넌트 구현이 가능합니다`,
   },
   {
     logo: tailwind,
     stackTitle: "Tailwind CSS",
-    description: `Uitiliy-First를 활용하여 직관적인 CSS 스타일링이
-가능합니다`,
+    description: `Uitiliy-First를 활용하여 직관적인 CSS 스타일링이 가능합니다`,
   },
 ];

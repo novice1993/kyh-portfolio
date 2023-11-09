@@ -213,6 +213,9 @@ const Container = styled.div`
 
   // README 닫기 버튼
   & button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
     font-weight: bolder;
     width: 28px;
