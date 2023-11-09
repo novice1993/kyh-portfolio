@@ -217,20 +217,18 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
 
-    margin: 0;
-    padding: 0;
-
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
-    width: 1.8rem;
-    height: 1.8rem;
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 0.3rem;
-    opacity: 0.55;
+    color: #f5f5f5;
+    background-color: transparent;
+    border: none;
+    opacity: 0.6;
+
+    transition: opacity 0.3s ease;
 
     &:hover {
       cursor: pointer;
+      opacity: 0.9;
     }
   }
 `;
