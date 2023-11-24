@@ -12,11 +12,13 @@ const ProjectOverview = ({ projectData }) => {
   const description = projectData.description;
   const duration = projectData.duration;
   const member = projectData.member;
+  const links = projectData.link;
   const stacks = projectData.stack;
 
   return (
     <Container>
       <div className="categoryTitle">{projectOverview01}</div>
+
       <div className="category">
         <div>
           <span>{projectOverview02}</span>
@@ -29,20 +31,14 @@ const ProjectOverview = ({ projectData }) => {
 
         <div>
           <span>{projectOverview03}</span>
-          <ul>
+          <ul className="durationAndMember">
             <li>{duration}</li>
-          </ul>
-        </div>
-
-        <div>
-          <span>{projectOverview04}</span>
-          <ul>
             <li>{member}</li>
           </ul>
         </div>
 
         <div>
-          <span>{projectOverview05}</span>
+          <span>{projectOverview04}</span>
           <div className="stack">
             {stacks.map((stack) => {
               const name = stack.name;
@@ -56,6 +52,19 @@ const ProjectOverview = ({ projectData }) => {
               );
             })}
           </div>
+        </div>
+
+        <div>
+          <span>{projectOverview05}</span>
+          <ul className="link">
+            {links.map((link) => {
+              return (
+                <a key={link.name} href={link.url} target="_blank" rel="noreferrer">
+                  <li>{link.name}</li>
+                </a>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </Container>
@@ -133,5 +142,14 @@ const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 3px;
+  }
+
+  & a {
+    color: #222222;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    &:hover {
+      color: #1d809f;
+    }
   }
 `;
