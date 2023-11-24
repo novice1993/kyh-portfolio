@@ -57,9 +57,10 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     gap: 5px;
+    font-size: 42px;
 
     ${mediaQuery.min} {
-      font-size: 26px;
+      font-size: 32px;
     }
   }
 `;
@@ -75,16 +76,16 @@ const Divider = styled.div`
 `;
 
 const InroduceMent = styled.div`
-  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
   margin: 12px 0px 36px 0px;
+  font-size: 21px;
 
   ${mediaQuery.min} {
-    font-size: 16px;
+    font-size: 18px;
   }
 `;
 
