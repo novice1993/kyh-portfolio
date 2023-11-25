@@ -119,13 +119,13 @@ const Container = styled.div`
   }
 
   .description {
-    ${mediaQuery.description} {
+    /* ${mediaQuery.description} {
       font-size: 14px;
     }
 
     ${mediaQuery.projects} {
       font-size: 16px;
-    }
+    } */
 
     ${mediaQuery.min} {
       font-size: 14px;

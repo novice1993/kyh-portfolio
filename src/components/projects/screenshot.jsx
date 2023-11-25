@@ -5,6 +5,7 @@ import { mediaQuery } from "../../style/mediaQuery";
 const contour = "/";
 
 const Screenshot = ({ projectData }) => {
+  const nyTimes = projectData.link[0].url === "https://ny-times-project.vercel.app/" ? true : false;
   const screenShotImg = projectData.screenShot;
   const [shotNum, setShotNum] = useState(1);
 
@@ -18,7 +19,7 @@ const Screenshot = ({ projectData }) => {
   };
 
   return (
-    <Container>
+    <Container isNyTimes={nyTimes}>
       <img src={screenShotImg[shotNum - 1]} />
       <div className="shotNumBox">
         <span onClick={() => handleChangeShotNum("left")} className="leftArrow">
@@ -46,11 +47,13 @@ const Container = styled.div`
   & img {
     border: 1px solid darkgray;
     border-radius: 0.4rem;
-    width: 30vw;
+    width: ${(props) => (props.isNyTimes ? "auto" : "100%")};
+    max-height: 385px;
 
-    ${mediaQuery.projects} {
+    /* width: 30vw; */
+    /* ${mediaQuery.projects} {
       width: 100%;
-    }
+    } */
   }
 
   .shotNumBox {
