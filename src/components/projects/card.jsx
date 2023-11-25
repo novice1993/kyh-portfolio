@@ -21,20 +21,21 @@ const ProjectCard = ({ projectData }) => {
 export default ProjectCard;
 
 const Container = styled.div`
+  height: 100%;
+  max-width: 67vw;
+  display: flex;
+  flex-direction: column;
+
+  gap: 48px;
+  padding: 48px;
+  margin-top: 48px;
+
   background-color: #f5f5f5;
   border-radius: 0.4rem;
-  max-width: 67vw;
 
   ${mediaQuery.description} {
     max-width: 73vw;
   }
-
-  height: 100%;
-  padding: 48px;
-
-  margin-top: 48px;
-  display: flex;
-  gap: 48px;
 
   ${mediaQuery.projects} {
     flex-direction: column;
