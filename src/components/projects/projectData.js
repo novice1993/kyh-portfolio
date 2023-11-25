@@ -4,6 +4,12 @@ import stock03 from "../../asset/project/stock03.gif";
 import stock04 from "../../asset/project/stock04.gif";
 import stock05 from "../../asset/project/stock05.gif";
 
+import nyTimes01 from "../../asset/project/nyTimes01.gif";
+import nyTimes02 from "../../asset/project/nyTimes02.gif";
+import nyTimes03 from "../../asset/project/nyTimes03.gif";
+import nyTimes04 from "../../asset/project/nyTimes04.gif";
+import nyTimes05 from "../../asset/project/nyTimes05.gif";
+
 import coz01 from "../../asset/project/coz01.gif";
 import coz02 from "../../asset/project/coz02.gif";
 import coz03 from "../../asset/project/coz03.gif";
@@ -22,7 +28,6 @@ import stockReview05 from "../../asset/review/stockReview05.gif";
 import stockReview07 from "../../asset/review/stockReview07.png";
 import stockReview09 from "../../asset/review/stockReview09.png";
 
-// project 개요 data
 export const stockHolm = {
   screenShot: [stock01, stock02, stock03, stock04, stock05],
   description: [
@@ -70,6 +75,43 @@ export const stockHolm = {
     "매도/매수 거래가 설정 시 오차 제거 기능 구현",
     "리프레시 토큰 활용 부재로 인한 자동 로그아웃 기능 구현",
   ],
+};
+
+export const nyTimes = {
+  screenShot: [nyTimes01, nyTimes02, nyTimes03, nyTimes04, nyTimes05],
+  description: [
+    "뉴욕타임즈 기사 조회 및 검색, 스크랩이 가능한 모바일 해상도 기반의 웹 사이트입니다",
+    "오픈 API를 활용하여 실제 기사 조회가 가능하며, 제목 클릭 시 기사로 연결됩니다",
+    "React-Query 라이브러리 활용하여 기사 목록 무한 스크롤 구현하였습니다",
+    "상단 필터 탭에서 조건 설정이 가능하며, 새로고침 및 종료 시에도 설정이 유지됩니다",
+    "해상도 변경에 따른 반응형 UI 구현하였습니다 (min-width 280px, max-width 560px)",
+  ],
+  duration: "1주 (2023. 11)",
+  member: "1명",
+  stack: [
+    { name: "TypeScript-yellow", logo: "typescript&logoColor=#3178C6" }, // ts
+    { name: "React-darkgreen", logo: "react&logoColor=#61DAFB" }, // react
+    { name: "Redux-purple", logo: "redux&logoColor=#764ABC" }, // redux
+    { name: "React Query-orange", logo: "reactQuery&logoColor=#FF4154" }, // query
+    { name: "styled components-pink", logo: "styledcomponents&logoColor=#DB7093" }, // styled
+  ],
+  link: [
+    {
+      url: "https://ny-times-project.vercel.app/",
+      name: "배포 링크",
+    },
+    {
+      url: "https://github.com/novice1993/ny-times",
+      name: "깃허브 레포지토리",
+    },
+  ],
+  roll: [
+    "기사 목록 무한 스크롤 구현",
+    "기사 필터링 기능 구현",
+    "관심 기사 스크랩 추가/제거 기능 구현",
+    "모바일 해상도 기반 반응형 UI 구현",
+  ],
+  review: [],
 };
 
 export const cozShopping = {
