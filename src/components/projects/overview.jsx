@@ -116,6 +116,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     white-space: pre-wrap;
+    color: #716c6c;
   }
 
   .description {
@@ -148,6 +149,7 @@ const Container = styled.div`
     color: #222222;
     text-decoration: none;
     transition: color 0.3s ease;
+    color: #716c6c;
     &:hover {
       color: #1d809f;
     }
