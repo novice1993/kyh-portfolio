@@ -7,8 +7,8 @@ const Projects = () => {
     <Container title="PROJECTS" id="projects" bgColor="#1d809f">
       <ProjectCard projectData={stockHolm} />
       <ProjectCard projectData={nyTimes} />
-      <ProjectCard projectData={cozShopping} />
       <ProjectCard projectData={portfolio} />
+      <ProjectCard projectData={cozShopping} />
     </Container>
   );
 };
