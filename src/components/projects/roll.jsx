@@ -40,6 +40,7 @@ const Container = styled.ul`
     display: flex;
     flex-direction: column;
     list-style-type: disc;
+    color: #716c6c;
 
     ${mediaQuery.min} {
       font-size: 14px;
