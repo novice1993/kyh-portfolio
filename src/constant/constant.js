@@ -29,7 +29,12 @@ export const eduContent03 = "- 프로젝트 2회 진행";
 // AboutMe - Carrer
 export const carrerTitle = "🧑🏻‍💻 커리어";
 export const carrer = "농협 재직ㅣ2021.04 ~ 2023.01 (1년 9개월)";
-export const carrerContent = "- 담당 업무 : 여/수신 및 총무";
+// export const carrerContent = "- 담당 업무 : 여/수신 및 총무";
+export const carrerContent = [
+  "- 수신 업무 일반 (계좌 개설, 카드 발급 등)",
+  "- 여신 업무 일반 (신용 및 부동산 담보 대출)",
+  "- 총무 업무 일반 (지점 비용 처리 등)",
+];
 
 // project
 export const projectOverview01 = "☑️ 개요";

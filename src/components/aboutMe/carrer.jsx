@@ -11,7 +11,13 @@ const Career = () => {
           {carrer}
 
           <ol>
-            <li className="firstList">{carrerContent}</li>
+            {carrerContent.map((content, idx) => {
+              return (
+                <li className={idx === 0 && "firstList"} key={content}>
+                  {content}
+                </li>
+              );
+            })}
           </ol>
         </li>
       </ul>
