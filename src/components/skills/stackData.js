@@ -23,11 +23,11 @@ export const stackData = [
     stackTitle: "React",
     description: `재사용 가능한 UI 설계가 가능하며 useMemo 등의 hook을 활용하여 성능 최적화가 가능합니다`,
   },
-  {
-    logo: next,
-    stackTitle: "Next",
-    description: `CSR과 SSR의 장단점을 이해하고 구현하려는 웹 페이지의 성격에 따라 선택적으로 활용할 수 있습니다`,
-  },
+  // {
+  //   logo: next,
+  //   stackTitle: "Next",
+  //   description: `CSR과 SSR의 장단점을 이해하고 구현하려는 웹 페이지의 성격에 따라 선택적으로 활용할 수 있습니다`,
+  // },
   {
     logo: redux,
     stackTitle: "Redux",
@@ -43,9 +43,9 @@ export const stackData = [
     stackTitle: "Styled-Components",
     description: `CSS-in-JS 활용에 익숙하며 동적 스타일링 및 재사용 가능한 컴포넌트 구현이 가능합니다`,
   },
-  {
-    logo: tailwind,
-    stackTitle: "Tailwind CSS",
-    description: `Uitiliy-First를 활용하여 직관적인 CSS 스타일링이 가능합니다`,
-  },
+  // {
+  //   logo: tailwind,
+  //   stackTitle: "Tailwind CSS",
+  //   description: `Uitiliy-First를 활용하여 직관적인 CSS 스타일링이 가능합니다`,
+  // },
 ];
