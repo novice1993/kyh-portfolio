@@ -15,22 +15,30 @@ export const blogUrl = "https://velog.io/@novice93";
 // introduce component
 export const title01 = "웹 프론트엔드 개발자";
 export const title02 = "김영학입니다";
-export const introduceMent01 = "핵심을 명확히 파악하며 논리정연하게 의사소통 합니다";
-export const introduceMent02 = "기획 및 개발 시에도 명확함과 논리정연함을 추구합니다";
+export const introduceMent01 =
+  "핵심을 명확히 파악하며 논리정연하게 의사소통 합니다";
+export const introduceMent02 =
+  "기획 및 개발 시에도 명확함과 논리정연함을 추구합니다";
 
 // AboutMe - Education
 export const educationTitle = "📚 교육";
 export const education01 = "경희대학교 사회학과 졸업ㅣ2012.02 ~ 2019.02";
-export const education02 = "코드스테이츠 부트캠프 수료ㅣ2023.04 ~ 2023.10 (6개월)";
-export const eduContent01 = "- JavaScript (TypeScript) / React / Redux / Styled-Components";
-export const eduContent02 = "- 네트워크 (HTTP/HTTPS, REST API) / 기타 툴 (Github, AWS, Figma)";
+export const education02 =
+  "코드스테이츠 부트캠프 수료ㅣ2023.04 ~ 2023.10 (6개월)";
+export const eduContent01 =
+  "- JavaScript (TypeScript) / React / Redux / Styled-Components";
+export const eduContent02 =
+  "- 네트워크 (HTTP/HTTPS, REST API) / 기타 툴 (Github, AWS, Figma)";
 export const eduContent03 = "- 프로젝트 2회 진행";
 
 // AboutMe - Carrer
 export const carrerTitle = "🧑🏻‍💻 커리어";
-export const carrer = "농협 재직ㅣ2021.04 ~ 2023.01 (1년 9개월)";
+export const carrer01 = "렉스젠(주) | 2024.01 ~ (재직, 6개월)";
+export const carrer02 = "농협 재직ㅣ2021.04 ~ 2023.01 (1년 9개월)";
+
 // export const carrerContent = "- 담당 업무 : 여/수신 및 총무";
-export const carrerContent = [
+export const carrerContent01 = ["- 웹 플랫폼팀 프론트엔드 담당"];
+export const carrerContent02 = [
   "- 수신 업무 일반 (계좌 개설, 카드 발급 등)",
   "- 여신 업무 일반 (신용 및 부동산 담보 대출)",
   "- 총무 업무 일반 (지점 비용 처리 등)",

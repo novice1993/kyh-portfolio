@@ -1,5 +1,11 @@
 import styled from "styled-components";
-import { carrerTitle, carrer, carrerContent } from "../../constant/constant";
+import {
+  carrerTitle,
+  carrer01,
+  carrer02,
+  carrerContent01,
+  carrerContent02,
+} from "../../constant/constant";
 import { mediaQuery } from "../../style/mediaQuery";
 
 const Career = () => {
@@ -8,10 +14,15 @@ const Career = () => {
       <h2>{carrerTitle}</h2>
       <ul>
         <li>
-          {carrer}
-
+          {carrer01}
           <ol>
-            {carrerContent.map((content, idx) => {
+            <li className={"firstList"}>{carrerContent01}</li>
+          </ol>
+        </li>
+        <li>
+          {carrer02}
+          <ol>
+            {carrerContent02.map((content, idx) => {
               return (
                 <li className={idx === 0 && "firstList"} key={content}>
                   {content}

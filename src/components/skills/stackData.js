@@ -30,12 +30,12 @@ export const stackData = [
   // },
   {
     logo: redux,
-    stackTitle: "Redux",
+    stackTitle: "Redux / Recoil",
     description: `클라이언트 상태 중앙화를 통해 상태관리 복잡성을 해결할 수 있습니다`,
   },
   {
     logo: reactQuery,
-    stackTitle: "React-Query",
+    stackTitle: "Tanstack/React-Query",
     description: `서버 데이터 페칭 및 캐싱 효율화를 통해 서버 상태관리 복잡성을 해결할 수 있습니다`,
   },
   {
